@@ -84,14 +84,20 @@ const ProductDetailScreen = ({ route, navigation }) => {
         {/* Swiper */}
         <View style={styles.swiperContainer}>
           <Swiper
+            autoplay
             showsPagination={true}
             dotColor={COLORS.subtext2}
             activeDotColor={COLORS.accent1}
+            loop={true}
             height={260}
-            loop
-            autoplay
-            autoplayTimeout={4}
+            autoplayTimeout={3}
             containerStyle={{ borderRadius: CARD_RADIUS, overflow: 'hidden' }}
+            removeClippedSubviews={false}
+            scrollEnabled={true}
+            showsButtons={false}
+            autoplayDirection={true}
+            index={0}
+
           >
             {product.productImages.map((img, idx) => (
               <Image

@@ -4,38 +4,43 @@
     "slug": "luxecart",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/splash.jpg",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#254E70"
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.luxecart.app"
+      "bundleIdentifier": "com.luxecart.app",
+      "buildNumber": "1"
     },
     "android": {
       "package": "com.luxecart.app",
       "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/splash.jpg",
         "backgroundColor": "#254E70"
       },
       "edgeToEdgeEnabled": true,
       "permissions": [
         "INTERNET",
         "ACCESS_NETWORK_STATE"
-      ]
+      ],
+      "allowBackup": true,
+      "softwareKeyboardLayoutMode": "pan"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/splash.jpg"
     },
     "extra": {
       "eas": {
-        "projectId": "your-project-id"
+        "projectId": "1d85cc37-9fb5-496c-8035-f6d54cfed645"
       }
-    }
+    },
+    "owner": "mayurnakum",
+    "platforms": ["ios", "android", "web"]
   }
 }

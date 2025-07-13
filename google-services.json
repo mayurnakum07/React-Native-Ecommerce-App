@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "811861037636",
+    "project_id": "ecommerce-app-63480",
+    "storage_bucket": "ecommerce-app-63480.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811861037636:android:7366de9f093c0540d66211",
+        "android_client_info": {
+          "package_name": "com.luxecart.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811861037636-d27b2tjl4didsg43bi02hdps5tasngj8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.luxecart.app",
+            "certificate_hash": "0c9701b04e7e17f94639404f8f609fbf153018d8"
+          }
+        },
+        {
+          "client_id": "811861037636-d3sqdkbvktrgokj9lncdmp1bu5nm1k4p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmISrQmmN_BYXfVTSEbtpoqI48LS8a6Jw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811861037636-d3sqdkbvktrgokj9lncdmp1bu5nm1k4p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

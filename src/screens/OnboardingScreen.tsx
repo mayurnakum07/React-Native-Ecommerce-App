@@ -46,7 +46,6 @@ interface OnboardingScreen {
   image: string;
   title: string;
   subtitle: string;
-  gradient: readonly [string, string, string];
   icon: string;
   feature: string;
   dark: boolean;
@@ -57,7 +56,6 @@ const screens: OnboardingScreen[] = [
     image: '🛍️',
     title: 'Welcome to LuxeCart',
     subtitle: 'Discover a world of premium shopping where luxury meets convenience. Your journey to exceptional retail begins here.',
-    gradient: [COLORS.primary, COLORS.primaryLight, COLORS.secondary],
     icon: '💎',
     feature: 'Premium Experience',
     dark: false,
@@ -66,7 +64,6 @@ const screens: OnboardingScreen[] = [
     image: '👗',
     title: 'Curated Collections',
     subtitle: 'Explore handpicked selections from the world\'s most prestigious brands. Every item tells a story of craftsmanship and style.',
-    gradient: [COLORS.secondary, COLORS.secondaryLight, COLORS.primary],
     icon: '✨',
     feature: 'Elite Brands',
     dark: false,
@@ -75,7 +72,6 @@ const screens: OnboardingScreen[] = [
     image: '💳',
     title: 'Seamless Payments',
     subtitle: 'Experience lightning-fast checkout with our secure payment system. Your financial data is protected with bank-level security.',
-    gradient: [COLORS.accent1, COLORS.accent2, COLORS.primary],
     icon: '🔒',
     feature: 'Secure & Fast',
     dark: false,
@@ -84,7 +80,6 @@ const screens: OnboardingScreen[] = [
     image: '🚚',
     title: 'Real-Time Tracking',
     subtitle: 'Follow your order\'s journey from our premium warehouse to your doorstep with live updates and precise delivery times.',
-    gradient: [COLORS.primary, COLORS.secondary, COLORS.accent1],
     icon: '📍',
     feature: 'Live Updates',
     dark: false,
@@ -93,7 +88,6 @@ const screens: OnboardingScreen[] = [
     image: '🎉',
     title: 'Personalized Shopping',
     subtitle: 'Enjoy a tailored shopping experience with AI-powered recommendations that understand your unique style and preferences.',
-    gradient: [COLORS.accent2, COLORS.primary, COLORS.secondary],
     icon: '🤖',
     feature: 'AI Powered',
     dark: true,

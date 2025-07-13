@@ -10,7 +10,7 @@ interface BannerProduct {
   id: string;
   shortName: string;
   shortDescription?: string;
-  productImages: string[];
+  productImages: any[];
   badge?: string;
 }
 
@@ -35,7 +35,8 @@ const BannerSwiper: React.FC<BannerSwiperProps> = ({ banners, onBannerPress }) =
     <View style={styles.swiperContainer}>
       <Swiper
         autoplay
-        autoplayTimeout={3.5}
+        autoplayTimeout={3}
+        loop={true}
         showsPagination={true}
         dotColor={Theme.COLORS.textSecondary}
         activeDotColor={Theme.COLORS.primary}
@@ -44,10 +45,15 @@ const BannerSwiper: React.FC<BannerSwiperProps> = ({ banners, onBannerPress }) =
         paginationStyle={styles.paginationStyle}
         dotStyle={styles.dotStyle}
         activeDotStyle={styles.activeDotStyle}
+        removeClippedSubviews={false}
+        scrollEnabled={true}
+        showsButtons={false}
+        autoplayDirection={true}
+        index={0}
       >
         {banners.map((product, idx) => (
           <TouchableOpacity
-            key={product.id}
+            key={`${product.id}-${idx}`}
             onPress={() => onBannerPress(product)}
             style={styles.bannerSlide}
             activeOpacity={0.9}

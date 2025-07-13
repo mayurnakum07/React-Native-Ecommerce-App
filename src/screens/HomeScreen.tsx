@@ -3,9 +3,8 @@ import { View, Text, StyleSheet, FlatList, TouchableOpacity, ScrollView } from '
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Feather } from '@expo/vector-icons';
 import { Theme, Layout } from '../theme';
-import { ProductCard, CategoryCard, LoadingSpinner, BannerSwiper, AnimatedLogo } from '../components';
+import { ProductCard, CategoryCard, BannerSwiper, AnimatedLogo } from '../components';
 import ApiService from '../services/api';
-import { Image } from 'react-native';
 
 // Section Header Component
 const SectionHeader = ({ title, onViewAll, subtitle }) => (

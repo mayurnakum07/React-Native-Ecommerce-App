@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { View } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { StatusBar } from 'expo-status-bar';
 import OnboardingScreen from './src/screens/OnboardingScreen';
@@ -12,8 +11,6 @@ import { AnimatedLogo } from './src/components';
 
 const ONBOARDING_KEY = 'hasCompletedOnboarding';
 
-
-
 export default function App() {
   const [hasCompletedOnboarding, setHasCompletedOnboarding] = useState<boolean | null>(null);
   const [isInitializing, setIsInitializing] = useState(true);
@@ -25,7 +22,7 @@ export default function App() {
       await checkOnboardingStatus();
       setIsInitializing(false);
     };
-    
+
     initializeApp();
   }, []);
 
@@ -51,7 +48,7 @@ export default function App() {
     checkOnboardingStatus,
   };
 
-  if (isInitializing || hasCompletedOnboarding == null) {
+  if (isInitializing || hasCompletedOnboarding === null) {
     return <AnimatedLogo size="large" />;
   }
 
